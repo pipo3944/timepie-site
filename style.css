@@ -1,0 +1,32 @@
+*{box-sizing:border-box;margin:0}
+:root{--ink:#16181B;--sub:#5B5E63;--line:#E4E1DA;--bg:#F7F5F0;--accent:#0D6E8F;--blue:#1E5BD6}
+@media (prefers-color-scheme:dark){:root{--ink:#F2F2F3;--sub:#A3A6AC;--line:#2B2E33;--bg:#121417;--accent:#4FB3D9}}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.85;-webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+.wrap{max-width:720px;margin:0 auto;padding:28px 22px 64px}
+nav{display:flex;align-items:center;gap:12px;margin-bottom:36px}
+nav img{width:40px;height:40px}
+nav .name{font-weight:800;font-size:19px;color:var(--ink);text-decoration:none}
+nav .links{margin-left:auto;display:flex;gap:16px;font-size:14px}
+nav .links a{color:var(--sub);text-decoration:none}
+nav .links a[aria-current]{color:var(--ink);font-weight:700}
+h1{font-size:28px;line-height:1.35;font-weight:800;margin-bottom:8px}
+h2{font-size:18px;font-weight:800;margin:34px 0 8px}
+h3{font-size:16px;font-weight:700;margin:22px 0 4px}
+p,li{font-size:15.5px}
+p+p{margin-top:10px}
+ul{padding-left:1.2em;margin-top:6px}
+li+li{margin-top:4px}
+.meta{color:var(--sub);font-size:14px}
+.hero{text-align:center;padding:24px 0 8px}
+.hero img{width:120px;height:120px;margin-bottom:18px}
+.hero h1{font-size:34px}
+.hero .lead{font-size:18px;color:var(--sub);margin-top:6px}
+.feats{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:12px;margin-top:34px}
+.feat{background:color-mix(in srgb,var(--ink) 4%,transparent);border-radius:16px;padding:16px 18px}
+.feat b{display:block;font-size:15.5px;margin-bottom:2px}
+.feat span{font-size:14px;color:var(--sub)}
+.badge{display:inline-block;margin-top:26px;padding:10px 18px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:700;font-size:14px}
+.box{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-top:14px}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--sub);display:flex;gap:16px;flex-wrap:wrap}
+footer a{color:var(--sub)}
